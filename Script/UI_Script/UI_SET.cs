@@ -13,6 +13,8 @@ public class UI_SET : MonoBehaviour
     public Canvas Pause;
     public Canvas Quet;
     public Canvas Login_flag;
+    public Canvas Select;
+    public Canvas Select_num;
 
     public bool set_begin;
     public bool set_success;
@@ -22,6 +24,8 @@ public class UI_SET : MonoBehaviour
     public bool set_pause;
     public bool set_quet;
     public bool set_login_flag;
+    public bool set_select;
+    public bool set_select_num;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +38,8 @@ public class UI_SET : MonoBehaviour
         set_pause = false;
         set_quet = false;
         set_login_flag = false;
+        set_select = false;
+        set_select_num = false;
 }
 
     // Update is called once per frame
@@ -47,5 +53,7 @@ public class UI_SET : MonoBehaviour
         Pause.gameObject.SetActive(set_pause);
         Quet.gameObject.SetActive(set_quet);
         Login_flag.gameObject.SetActive(set_login_flag);
+        Select.gameObject.SetActive(set_select);
+        Select_num.gameObject.SetActive(set_select_num);
     }
 }

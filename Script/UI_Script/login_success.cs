@@ -25,7 +25,6 @@ public class login_success : MonoBehaviour
         {
             GameObject.Find("Main Camera").GetComponent<UI_SET>().set_login_flag = false;
             GameObject.Find("Position_set").GetComponent<Shoot>().UI_check = true;
-
         }
     }
 }

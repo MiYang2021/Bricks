@@ -26,7 +26,7 @@ public class Counter : MonoBehaviour
             return;
 
         }
-        timer = 60.0f;//设定初始时间
+        timer = 120.0f;//设定初始时间
         click = false;//点击鼠标后再开始计时
         pause = false;//设置暂停
     }

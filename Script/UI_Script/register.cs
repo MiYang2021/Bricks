@@ -63,8 +63,8 @@ public class register : MonoBehaviour
                 goal = PlayerPrefs.GetFloat(set_username + "goal");
                 password_alarm.text = "Registered successfully!";
                 login_or_register = true;
-                //         GameObject.Find("Main Camera").GetComponent<UI_SET>().set_register = false;
-                //           GameObject.Find("Main Camera").GetComponent<UI_SET>().set_login_flag = true;
+                GameObject.Find("Main Camera").GetComponent<UI_SET>().set_register = false;
+                GameObject.Find("Main Camera").GetComponent<UI_SET>().set_select = true;
 
             }
             else

@@ -32,8 +32,6 @@ public class login : MonoBehaviour
         get_username = username.GetComponent<InputField>().text;
         get_password = password.GetComponent<InputField>().text;
 
-        
-
         LOGIN.GetComponent<Button>().onClick.AddListener(delegate ()
         {
             //Debug.Log(check);
@@ -47,7 +45,7 @@ public class login : MonoBehaviour
                 alarm.text = "Login successfully!";
                 login_or_register = true;
                 GameObject.Find("Main Camera").GetComponent<UI_SET>().set_login = false;
-                GameObject.Find("Main Camera").GetComponent<UI_SET>().set_login_flag = true;
+                GameObject.Find("Main Camera").GetComponent<UI_SET>().set_select = true;
 
             }
             else
@@ -61,9 +59,5 @@ public class login : MonoBehaviour
             GameObject.Find("Main Camera").GetComponent<UI_SET>().set_login = false;
             GameObject.Find("Main Camera").GetComponent<UI_SET>().set_register = true;
         });
-
-
-
-
     }
 }
