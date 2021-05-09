@@ -23,19 +23,20 @@ public class Shoot : MonoBehaviour
 
     public bool check;//屏幕中是否有小球
     public bool UI_check;//是否已经结束UI
-
+    public bool text = false;
     
     public int get_count;
     // Start is called before the first frame update
     void Start()
     {
         speed = 15;
-        ball_speed = 12;
+        ball_speed = 10;
         get_count = 0;
-        life = 2;
+        life = 3;
         check = false;
         UI_check = false;
         alarm_text = "<color=red>Please Don't Leave The Area!</color>";
+
     }
 // Update is called once per frame
 void Update()

@@ -26,8 +26,9 @@ public class Ball : MonoBehaviour
         {
             count += 1;
             GameObject.Find("Position_set").GetComponent<Shoot>().get_count=count;
+            Destroy(other.gameObject);
             //           Debug.Log(count);
-            if (count==5)
+            if (count==20)
             {
                 GameObject.Find("Main Camera").GetComponent<UI_SET>().set_success = true;
                 GameObject.Find("Counter").GetComponent<Counter>().pause = true;
