@@ -179,11 +179,11 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: e461bf70e65fd9e4e8001e1a8a396236,
+    m_HighlightedSprite: {fileID: 21300000, guid: 0a1eded8fda71b14ba584a9b29afa471,
       type: 3}
     m_PressedSprite: {fileID: 21300000, guid: f4132d8f22eb46c4b8d8079471e6919d, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: f4132d8f22eb46c4b8d8079471e6919d, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 3579b0c5c2677f446aec7100e245decb, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: f4132d8f22eb46c4b8d8079471e6919d, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -724,7 +724,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quet
+  m_Text: Back to Select
 --- !u!1 &3271953925466168701
 GameObject:
   m_ObjectHideFlags: 0
