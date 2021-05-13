@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// 小球发射、滑动板移动控制、以及计数的控制脚本
+/// </summary>
 public class Shoot : MonoBehaviour
 {
-    /// <summary>
-    /// 
-    /// </summary>
+    
     public GameObject ball;//对象：小球
- //   public Text alarm;
-
     public Vector3 direction;//小球发射的方向
 
     public int speed;//移动板的移动速度
@@ -18,14 +16,12 @@ public class Shoot : MonoBehaviour
     public float h;//移动板的横坐标
     public int life;//可发射的小球数
     public float ball_y;//小球的y坐标
-
     public string alarm_text;
-
     public bool check;//屏幕中是否有小球
     public bool UI_check;//是否已经结束UI
     public bool text = false;
-    
     public int get_count;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,32 +60,7 @@ void Update()
             check = true;
 
         }
-        //if(check==true)
-        //{
-        //    get_count = GameObject.Find("Sphere(Clone)").GetComponent<Ball>().count;
-        //}
-        //if (get_count == 10)
-        //{
-        //    GameObject.Find("Main Camera").GetComponent<UI_SET>().set_success = true;
-        //    GameObject.Find("Counter").GetComponent<Counter>().pause = true;
-        //}
-
-
-
-        Debug.Log(get_count);
+       Debug.Log(get_count);
 
     }
-
-    //碰撞开始
-    //void OnCollisionEnter(Collision other)
-    //{
-    //    //    var name = collision.collider.name;
-    //    if(other.gameObject.tag=="Walls")
-    //    {
-    //        alarm.text = alarm_text;
-    //    }
-        //    Debug.Log("name:" + name);
-        // Debug.Log(num);
-   // }
-
 }

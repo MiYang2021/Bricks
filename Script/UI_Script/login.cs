@@ -2,19 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// 登录页面控制脚本
+/// </summary>
 public class login : MonoBehaviour
 {
-    public InputField username;
-    public InputField password;
-    public Button LOGIN;
-    public Button REGISTER;
-    public Text alarm;
+    public InputField username;//用户名输入框
+    public InputField password;//密码输入框
+    public Button LOGIN;//登录按钮
+    public Button REGISTER;//进入注册
+    public Text alarm;//警告文字
 
-    public string alarm_1;
-    public string get_username;
-    public string get_password;
-    public bool check;
+    public string alarm_1;//警告文字
+    public string get_username;//输入的用户名
+    public string get_password;//输入的密码
+    public bool check;//
     public bool login_or_register;
 
 
@@ -50,14 +52,14 @@ public class login : MonoBehaviour
             }
             else
             {
-                alarm.text = alarm_1;
+                alarm.text = alarm_1;//
             }
         });
 
         REGISTER.GetComponent<Button>().onClick.AddListener(delegate ()
         {
-            GameObject.Find("Main Camera").GetComponent<UI_SET>().set_login = false;
-            GameObject.Find("Main Camera").GetComponent<UI_SET>().set_register = true;
+            GameObject.Find("Main Camera").GetComponent<UI_SET>().set_login = false;//关闭登录页面
+            GameObject.Find("Main Camera").GetComponent<UI_SET>().set_register = true;//进入注册页面
         });
     }
 }

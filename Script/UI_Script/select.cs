@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class select : MonoBehaviour
 {
-    //public Button DEFINED_ALL;
+    public Button CLASSICAL;
     public Button DEFFINED_THE_NUMBER;
 
     // Start is called before the first frame update
@@ -21,6 +21,13 @@ public class select : MonoBehaviour
         {
             GameObject.Find("Main Camera").GetComponent<UI_SET>().set_select = false;
             GameObject.Find("Main Camera").GetComponent<UI_SET>().set_select_num = true;
+            GameObject.Find("Bricks").GetComponent<Brick>().choose = 0;
+            GameObject.Find("Bricks").GetComponent<Brick>().again = false;
+        });
+        CLASSICAL.GetComponent<Button>().onClick.AddListener(delegate ()
+        {
+            GameObject.Find("Main Camera").GetComponent<UI_SET>().set_select = false;
+            GameObject.Find("Main Camera").GetComponent<UI_SET>().set_classical = true;
         });
     }
 }
