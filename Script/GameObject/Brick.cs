@@ -4,7 +4,6 @@ using UnityEngine;
 /// <summary>
 /// 砖块生成控制脚本
 /// </summary>
-
 public class Brick : MonoBehaviour
 {
     public GameObject brick_1;//红砖模型

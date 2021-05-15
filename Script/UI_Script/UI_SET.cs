@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// UI总控制脚本
+/// </summary>
 public class UI_SET : MonoBehaviour
 {
+    //UI模型
     public Canvas Begin;
     public Canvas Success;
     public Canvas Fail;
@@ -17,6 +20,7 @@ public class UI_SET : MonoBehaviour
     public Canvas Select_num;
     public Canvas Classical;
 
+    //UI的显示参数
     public bool set_begin;
     public bool set_success;
     public bool set_fail;
@@ -32,6 +36,7 @@ public class UI_SET : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //初始化UI的显示
         set_begin = true;
         set_success = false;
         set_fail = false;
@@ -48,6 +53,7 @@ public class UI_SET : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //通过显示参数控制UI的显示
         Begin.gameObject.SetActive(set_begin);
         Success.gameObject.SetActive(set_success);
         Fail.gameObject.SetActive(set_fail);

@@ -6,7 +6,6 @@ using System;
 /// <summary>
 /// 设置砖块数和小球速度的页面控制脚本
 /// </summary>
-
 public class select_num : MonoBehaviour
 {
     public Slider num_set;//选择砖块数量的滑条
